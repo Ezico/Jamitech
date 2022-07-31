@@ -56,11 +56,11 @@ export const Gold = () => {
               <h3>Prices</h3>
               <li>
                 Price without solar - N1,200,000 <br />
-                <Link to="/quote?Gold">(Request a quote)</Link>
+                <Link to="/quote?GoldMid">(Request a quote)</Link>
               </li>
               <li>
                 Price with solar - N1,950,000 <br />
-                <Link to="/quote?Gold">(Request a quote)</Link>
+                <Link to="/quote?GoldMid">(Request a quote)</Link>
               </li>
             </div>
           </div>
@@ -107,11 +107,11 @@ export const Gold = () => {
               <h3>Prices</h3>
               <li>
                 Price without solar - N1,850,000 <br />
-                <Link to="/quote?Gold">(Request a quote)</Link>
+                <Link to="/quote?GoldMax">(Request a quote)</Link>
               </li>
               <li>
                 Price with solar - N3,100,000 <br />
-                <Link to="/quote?Gold">(Request a quote)</Link>
+                <Link to="/quote?GoldMax">(Request a quote)</Link>
               </li>
             </div>
           </div>

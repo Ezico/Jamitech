@@ -56,11 +56,11 @@ export const Diamond = () => {
               <h3>Prices</h3>
               <li>
                 Price without solar - N2,450,000 <br />
-                <Link to="/quote?Diamond">(Request a quote)</Link>
+                <Link to="/quote?DiamondMid">(Request a quote)</Link>
               </li>
               <li>
                 Price with solar - N3,800,000 <br />
-                <Link to="/quote?Diamond">(Request a quote)</Link>
+                <Link to="/quote?DiamondMid">(Request a quote)</Link>
               </li>
             </div>
           </div>
@@ -107,11 +107,11 @@ export const Diamond = () => {
               <h3>Prices</h3>
               <li>
                 Price without solar - N3,100,000 <br />
-                <Link to="/quote?Diamond">(Request a quote)</Link>
+                <Link to="/quote?DiamondMax">(Request a quote)</Link>
               </li>
               <li>
                 Price with solar - N5,200,000 <br />
-                <Link to="/quote?Diamond">(Request a quote)</Link>
+                <Link to="/quote?DiamondMax">(Request a quote)</Link>
               </li>
             </div>
           </div>

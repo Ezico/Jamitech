@@ -95,7 +95,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
-  margin-bottom: 0.75em;
+  margin-bottom: 10px;
   font-family: "Hamlin";
   font-weight: 800;
 }
@@ -315,7 +315,7 @@ p {
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 10rem;
   }
   .nav-links a {
     margin: 0 1rem;
@@ -427,7 +427,7 @@ img {
   width: 70%;
 }
 .services {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 .services p {
   padding: 10px;
@@ -1117,4 +1117,96 @@ p {
 
 .policy h3 {
   padding: 10px 0;
+}
+
+/* benefit sections */
+.overview-content h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff9800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.overview-content h2 {
+  font-size: 38px;
+  color: #0b0b31;
+  margin: 8px 0 15px 0;
+}
+.overview-content p {
+  margin: 0 0 0 0;
+}
+.overview-content .features-list {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 16px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.overview-content .features-list li {
+  -ms-flex: 0 0 50%;
+  -webkit-box-flex: 0;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.overview-content .features-list li span {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px 15px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #0b0b31;
+  border-left: 2px solid #ff6600;
+  font-weight: 600;
+  font-size: 18px;
+  -webkit-box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+  box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+}
+.overview-content .features-list li span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+  background-color: #ff6600;
+  z-index: -1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.overview-content .features-list li span:hover {
+  color: #ffffff;
+  background-color: #ff6600;
+}
+.overview-content .features-list li span:hover::before {
+  width: 100%;
+  background-color: #7b68ee;
+}
+.overview-content .features-list li span:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+
+  z-index: -1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.overview-content {
+  padding: 20px;
 }

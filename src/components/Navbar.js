@@ -48,9 +48,9 @@ export default class Navbar extends Component {
               <li>
                 <Link to="/packages">Packages</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/energy-load-chart">Energy Load chart</Link>
-              </li>
+              </li> */}
               {/* <li>
                 <Link to="/product">Products</Link>
               </li> */}

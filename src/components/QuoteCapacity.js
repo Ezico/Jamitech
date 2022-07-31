@@ -121,7 +121,7 @@ export default function QuoteCapacity() {
                             </select>
                           ) : null}
 
-                          {isSelected == "?Silver" ? (
+                          {isSelected == "?SilverMid" ? (
                             <select id="package" name="role[]">
                               <option>STARTER PACKAGE (1KVA)</option>
                               <option>RUBY PACKAGE (2KVA)</option>
@@ -137,8 +137,24 @@ export default function QuoteCapacity() {
                               <option>ELITE PACKAGE (15KVA)</option>
                             </select>
                           ) : null}
+                          {isSelected == "?SilverMax" ? (
+                            <select id="package" name="role[]">
+                              <option>STARTER PACKAGE (1KVA)</option>
+                              <option>RUBY PACKAGE (2KVA)</option>
+                              <option>SILVER PACKAGE (3.5KVA) MID</option>
+                              <option selected>
+                                SILVER PACKAGE (3.5KVA) MAX
+                              </option>
+                              <option>GOLD PACKAGE (5KVA) MID</option>
+                              <option>GOLD PACKAGE (5KVA) MAX</option>
+                              <option>PLATINUM PACKAGE (7.5KVA)</option>
+                              <option>DIAMOND PACKAGE (10KVA) MID</option>
+                              <option>DIAMOND PACKAGE (10KVA) MAX</option>
+                              <option>ELITE PACKAGE (15KVA)</option>
+                            </select>
+                          ) : null}
 
-                          {isSelected == "?Gold" ? (
+                          {isSelected == "?GoldMid" ? (
                             <select id="package" name="role[]">
                               <option>STARTER PACKAGE (1KVA)</option>
                               <option>RUBY PACKAGE (2KVA)</option>
@@ -146,6 +162,20 @@ export default function QuoteCapacity() {
                               <option>SILVER PACKAGE (3.5KVA) MAX</option>
                               <option selected>GOLD PACKAGE (5KVA) MID</option>
                               <option>GOLD PACKAGE (5KVA) MAX</option>
+                              <option>PLATINUM PACKAGE (7.5KVA)</option>
+                              <option>DIAMOND PACKAGE (10KVA) MID</option>
+                              <option>DIAMOND PACKAGE (10KVA) MAX</option>
+                              <option>ELITE PACKAGE (15KVA)</option>
+                            </select>
+                          ) : null}
+                          {isSelected == "?GoldMax" ? (
+                            <select id="package" name="role[]">
+                              <option>STARTER PACKAGE (1KVA)</option>
+                              <option>RUBY PACKAGE (2KVA)</option>
+                              <option>SILVER PACKAGE (3.5KVA) MID</option>
+                              <option>SILVER PACKAGE (3.5KVA) MAX</option>
+                              <option>GOLD PACKAGE (5KVA) MID</option>
+                              <option selected>GOLD PACKAGE (5KVA) MAX</option>
                               <option>PLATINUM PACKAGE (7.5KVA)</option>
                               <option>DIAMOND PACKAGE (10KVA) MID</option>
                               <option>DIAMOND PACKAGE (10KVA) MAX</option>
@@ -171,21 +201,35 @@ export default function QuoteCapacity() {
                               <option>ELITE PACKAGE (15KVA)</option>
                             </select>
                           ) : null}
-                          {isSelected == "?Diamond" ? (
+                          {isSelected == "?DiamondMid" ? (
                             <select id="package" name="role[]">
                               <option>STARTER PACKAGE (1KVA)</option>
                               <option>RUBY PACKAGE (2KVA)</option>
-                              <option selected>
-                                SILVER PACKAGE (3.5KVA) MID
-                              </option>
+                              <option>SILVER PACKAGE (3.5KVA) MID</option>
                               <option>SILVER PACKAGE (3.5KVA) MAX</option>
                               <option>GOLD PACKAGE (5KVA) MID</option>
                               <option>GOLD PACKAGE (5KVA) MAX</option>
+                              <option>PLATINUM PACKAGE (7.5KVA)</option>
                               <option selected>
-                                PLATINUM PACKAGE (7.5KVA)
+                                DIAMOND PACKAGE (10KVA) MID
                               </option>
-                              <option>DIAMOND PACKAGE (10KVA) MID</option>
                               <option>DIAMOND PACKAGE (10KVA) MAX</option>
+                              <option>ELITE PACKAGE (15KVA)</option>
+                            </select>
+                          ) : null}
+                          {isSelected == "?DiamondMax" ? (
+                            <select id="package" name="role[]">
+                              <option>STARTER PACKAGE (1KVA)</option>
+                              <option>RUBY PACKAGE (2KVA)</option>
+                              <option>SILVER PACKAGE (3.5KVA) MID</option>
+                              <option>SILVER PACKAGE (3.5KVA) MAX</option>
+                              <option>GOLD PACKAGE (5KVA) MID</option>
+                              <option>GOLD PACKAGE (5KVA) MAX</option>
+                              <option>PLATINUM PACKAGE (7.5KVA)</option>
+                              <option>DIAMOND PACKAGE (10KVA) MID</option>
+                              <option selected>
+                                DIAMOND PACKAGE (10KVA) MAX
+                              </option>
                               <option>ELITE PACKAGE (15KVA)</option>
                             </select>
                           ) : null}

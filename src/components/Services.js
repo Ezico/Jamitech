@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import panel from "../images/panel-black.png";
 import wwu from "../images/why.png";
 import electric from "../images/Man_on_root.jpg";
+import electric2 from "../images/details-2.jpeg";
 import { FaCheckCircle, FaThumbsUp } from "react-icons/fa";
 export default class Services extends Component {
   render() {
@@ -53,7 +54,28 @@ export default class Services extends Component {
               <img src={electric} alt="img" />
               {/* <Video /> */}
             </div>
+            <div className="col-5 services ">
+              <h2>Explore our packages</h2>
+              <div className="divider"></div>
+              <p>
+                Our packages are designed to provide uninterrupted power supply
+                for homes and offices by appropriately sizing Inverter, battery
+                bank and solar arrays with special consideration for appliance
+                to be powered and hours of usage. Kindly go through our packages
+                by clicking the link below to find a suitable package that fits
+                into your budget or energy requirement.
+              </p>
 
+              <Link className="btn-secondary" to="/packages">
+                Shop Now
+              </Link>
+              <br />
+            </div>
+          </div>
+        </section>
+        {/* section 3 */}
+        <section className="details">
+          <div className="row">
             <div className="col-5 services ">
               <p style={{ textAlign: "left" }}>
                 Electricity has become a major problem for homes and various
@@ -75,84 +97,60 @@ export default class Services extends Component {
               <br />
               <br />
             </div>
-          </div>
-        </section>
-        {/* section 3 */}
-        <section className="details">
-          <div className="row">
-            <div className="col-5 services ">
-              <div className="benefit-wrapper">
-                <br />
-                <h2>Benefits</h2>
-                <div className="divider"></div>
 
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">Uninterrupted power supply</h5>
-                  </div>
-                </div>
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">Zero noise and Zero emission</h5>
-                  </div>
-                </div>
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">
-                      No daily, weekly or monthly recurring expenses
-                    </h5>
-                  </div>
-                </div>
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">Minimal maintenance</h5>
-                  </div>
-                </div>
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">
-                      No wear & tear because there is no mechanical moving parts
-                    </h5>
-                  </div>
-                </div>
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">Reduced electricity bill</h5>
-                  </div>
-                </div>
-                <div class="feature__list flex">
-                  <div class="feature__list--icon">
-                    <FaThumbsUp />
-                  </div>
-                  <div class="feature__list--content">
-                    <h5 class="fw-700 mb-10">Maximum convenience</h5>
-                  </div>
-                </div>
-              </div>
-              {/* <Title title="Go solar" /> */}
-
-              <br />
-            </div>
             <div className="col-5">
               <img src={panel} alt="img" />
+            </div>
+          </div>
+        </section>
+
+        <section className="details">
+          <div className="row">
+            <div className="col-5">
+              <img src={electric2} alt="img" />
+              {/* <Video /> */}
+            </div>
+            <div className="col-5  ">
+              <div class="overview-content">
+                <h6>Benefits</h6>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul class="features-list">
+                  <li>
+                    {" "}
+                    <span>Uninterrupted power supply</span>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>Zero noise and Zero emission</span>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>No daily, weekly or monthly recurring expenses</span>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>
+                      No wear & tear because there is no mechanical moving parts
+                    </span>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>Minimal maintenance</span>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>Reduced electricity bill</span>
+                  </li>
+                  <li>
+                    {" "}
+                    <span>Maximum convenience</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
