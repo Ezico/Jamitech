@@ -1,0 +1,96 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Banner from "../../components/Banner";
+import Hero from "../../components/Hero";
+
+export const Platinum = () => {
+  return (
+    <>
+      <Hero hero="roomsHero">
+        <Banner title="Platinum Packages">
+          <Link to="/packages" className="btn-primary">
+            Return Home
+          </Link>
+        </Banner>
+      </Hero>
+      <br />
+      <div className="container">
+        <div className="packages-header">Platinum Package (7.5KVA)</div>
+        <div className="packages-content row">
+          <div className="p-5 col-xs-12 col-md-3 col-lg-3">
+            <h3>Specification</h3>
+            <ul>
+              <li>7.5kva Pure Sine inverter x 1</li>
+              <li>220AH 12V Tubular Battery x 8</li>
+              <li> 300Watts Monocrystalline Solar panel x 16</li>
+              <li>Battery rack x 1</li>
+              <li>Installation accessories</li>
+              <li>Delivery and installation service inclusive</li>
+            </ul>
+          </div>
+          <div className="p-5 col-xs-12 col-md-3 col-lg-3">
+            <h3>Appliances</h3>
+            <ul>
+              <li>Lights - 7 to 15</li>
+              <li>Fans - 3 to 5</li>
+              <li>TV - 1 to 3</li>
+              <li>Sound bar - 1 to 2</li>
+              <li>Laptop - 1 to 3</li>
+              <li>Blender - 1</li>
+              <li>Fridge - 1 to 2</li>
+              <li>Freezer - 1 to 2</li>
+              <li>Washing machine - 1</li>
+              <li>Pumping machine (up to 2hp) - 1</li>
+              <li>AC - 1 to 2</li>
+            </ul>
+          </div>
+          <div className="p-5 col-xs-12 col-md-3 col-lg-3">
+            <h3>Backup duration:</h3>
+            <ul>
+              <li>- 8 to 14 hours without solar</li>
+              <li> - 18 to 24 hours with solar</li>
+            </ul>
+          </div>
+          <div className="p-5 col-xs-12 col-md-3 col-lg-3">
+            <h3>Prices</h3>
+            <li>
+              Price without solar - N2,300,000 <br />
+              <Link to="/quote?Platinum">(Request a quote)</Link>
+            </li>
+            <li>
+              Price with solar - N3,650,000 <br />
+              <Link to="/quote?Platinum">(Request a quote)</Link>
+            </li>
+          </div>
+        </div>
+        <p>Notes: </p>
+
+        <li>
+          - This is an estimated load; load and hours may vary based on the
+          consumption of each appliance.
+        </li>
+        <li>- Appliances with similar consumption can be interchanged.</li>
+        <li>- Low energy consuming appliances recommended</li>
+        <p>
+          <br />
+          <em>Without solar:</em> this is inverter and battery backup without
+          the inclusion of solar panels. PHCN or Generator will be the only
+          source of charging. Its suitable if there is available PHCN or
+          Generator power for average total of 10 hours daily.
+        </p>
+        <br />
+        <p>
+          <em>With solar:</em> this is inverter and battery backup with the
+          inclusion of solar panels for additional source of charging from the
+          sun without having to solely depend on PHCN for charging.
+        </p>
+
+        <p>After sales service and support fully inclusive </p>
+        <p>1 year warranty on all products and installation </p>
+        <p>
+          Installation commences within 24 to 48 hours upon receipt of payment.
+        </p>
+      </div>
+    </>
+  );
+};
