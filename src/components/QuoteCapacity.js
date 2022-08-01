@@ -265,9 +265,8 @@ export default function QuoteCapacity() {
                             </select>
                           ) : null}
                           <select name="with-solar">
-                            <option>WITH SOLAR?</option>
-                            <option>YES</option>
-                            <option>NO</option>
+                            <option>WITH SOLAR</option>
+                            <option>WITHOUT SOLAR</option>
                           </select>
 
                           <select name="property">

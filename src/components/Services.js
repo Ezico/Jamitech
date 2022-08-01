@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Title from "./Title";
 import { Link } from "react-router-dom";
-import panel from "../images/panel-black.png";
+import panel from "../images/banner2.jpg";
 import wwu from "../images/why.png";
 import electric from "../images/Man_on_root.jpg";
-import electric2 from "../images/details-2.jpeg";
+import electric2 from "../images/banner3.jpg";
 import { FaCheckCircle, FaThumbsUp } from "react-icons/fa";
 export default class Services extends Component {
   render() {
@@ -17,10 +17,11 @@ export default class Services extends Component {
           <div className="row">
             <div className="col-6 services ">
               <h6 class="lte-subheader">About Company</h6>
+              <br />
               <h3 class="lte-header">JamiTech Energy Solutions Limited</h3>
               <p style={{ textAlign: "left" }}>
-                is a Nigerian Energy Company Specialized in Clean Renewable
-                Energy – Particularly Inverter systems, Battery Backup and Solar
+                is a Nigerian energy company specialized in clean renewable
+                energy – Particularly Inverter systems, Battery backup and Solar
                 solutions. <br />
                 Over the years we have powered various homes, offices and
                 government institution across the country. We are well known for
@@ -54,6 +55,7 @@ export default class Services extends Component {
               <img src={electric} alt="img" />
               {/* <Video /> */}
             </div>
+            <br />
             <div className="col-5 services ">
               <h2>Explore our packages</h2>
               <div className="divider"></div>
@@ -62,10 +64,10 @@ export default class Services extends Component {
                 for homes and offices by appropriately sizing Inverter, battery
                 bank and solar arrays with special consideration for appliance
                 to be powered and hours of usage. Kindly go through our packages
-                by clicking the link below to find a suitable package that fits
-                into your budget or energy requirement.
+                by clicking the button below to find a suitable package that
+                fits into your budget or energy requirement.
               </p>
-
+              <br />
               <Link className="btn-secondary" to="/packages">
                 Shop Now
               </Link>
@@ -78,6 +80,8 @@ export default class Services extends Component {
           <div className="row">
             <div className="col-5 services ">
               <p style={{ textAlign: "left" }}>
+                <br />
+                <br />
                 Electricity has become a major problem for homes and various
                 businesses in Nigeria. The need to look into alternative source
                 of energy as become necessary especially clean renewable energy
@@ -87,11 +91,6 @@ export default class Services extends Component {
                 power supply everyday through our premium Inverter and solar
                 systems.
               </p>
-              <br />
-              <br />
-              <Link className="btn-secondary" to="/packages">
-                Shop Now
-              </Link>
 
               <br />
               <br />
@@ -115,8 +114,9 @@ export default class Services extends Component {
                 <h6>Benefits</h6>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  The benefits of switching to inverter system, battery backup
+                  and solar energy can not be overemphasised. Here are some of
+                  the benefits.
                 </p>
                 <ul class="features-list">
                   <li>

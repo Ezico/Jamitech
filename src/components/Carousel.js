@@ -41,7 +41,7 @@ const Carousel = () => {
                   repeat={Infinity}
                 />
                 <Link to="/quote">
-                  <button className="btn btn-carousel">GET A QUOTE</button>
+                  <button className="btn btn-carousel">SHOP NOW</button>
                 </Link>
               </div>
             </div>
@@ -56,9 +56,20 @@ const Carousel = () => {
             <div className="left-sec"></div>
             <div className="right-sec">
               <div className="carousel-content">
-                <h2>Premium rugged and durable Inverters</h2>
+                <TypeAnimation
+                  style={"font-size:20px"}
+                  cursor={true}
+                  sequence={[
+                    "  Topnotch Professional Installation Guaranteed",
+                    3000,
+                    "Topnotch Professional Installation Guaranteed",
+                    3000,
+                  ]}
+                  wrapper="h2"
+                  repeat={Infinity}
+                />
                 <Link to="/quote">
-                  <button className="btn btn-carousel">GET A QUOTE</button>
+                  <button className="btn btn-carousel">SHOP NOW</button>
                 </Link>
               </div>
             </div>

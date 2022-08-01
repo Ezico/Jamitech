@@ -37,16 +37,24 @@ export default class Navbar extends Component {
               <Link to="/">Home</Link>
             </li> */}
               <li>
-                <Link to="/">Home</Link>
+                <Link onClick={this.handleToggle} to="/">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about">About Us</Link>
+                <Link onClick={this.handleToggle} to="/about">
+                  About Us
+                </Link>
               </li>
               <li>
-                <Link to="/services">Our Services</Link>
+                <Link onClick={this.handleToggle} to="/services">
+                  Our Services
+                </Link>
               </li>
               <li>
-                <Link to="/packages">Packages</Link>
+                <Link onClick={this.handleToggle} to="/packages">
+                  Packages
+                </Link>
               </li>
               {/* <li>
                 <Link to="/energy-load-chart">Energy Load chart</Link>
@@ -56,10 +64,14 @@ export default class Navbar extends Component {
               </li> */}
 
               <li>
-                <Link to="/gallery">Gallery</Link>
+                <Link onClick={this.handleToggle} to="/gallery">
+                  Gallery
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link onClick={this.handleToggle} to="/contact">
+                  Contact
+                </Link>
               </li>
               {/* <li>
                 <Link to="/quote">Request a quote</Link>

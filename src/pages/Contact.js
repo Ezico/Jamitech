@@ -12,6 +12,8 @@ import {
 const Contact = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
+  const [location, setLocation] = useState();
+  const [phone, setPhone] = useState();
 
   // 👇️ called every time input's value changes
   const handleNameChange = (event) => {
@@ -20,6 +22,15 @@ const Contact = () => {
   // 👇️ called every time input's value changes
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
+  };
+
+  // 👇️ called every time input's value changes
+  const handlePhoneChange = (event) => {
+    setPhone(event.target.value);
+  };
+  // 👇️ called every time input's value changes
+  const handleLocationChange = (event) => {
+    setLocation(event.target.value);
   };
   return (
     <>
@@ -43,6 +54,26 @@ const Contact = () => {
                             onChange={handleNameChange}
                             value={name}
                             placeholder="Name"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                          <input
+                            type="text"
+                            name="location"
+                            onChange={handleLocationChange}
+                            value={location}
+                            placeholder="Address"
+                            required
+                          />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                          <input
+                            type="text"
+                            name="phone"
+                            onChange={handlePhoneChange}
+                            value={phone}
+                            placeholder="Phone Number"
                             required
                           />
                         </div>
