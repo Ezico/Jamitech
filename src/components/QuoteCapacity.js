@@ -49,7 +49,7 @@ export default function QuoteCapacity() {
               <div class="form-column col-md-8 col-sm-12 col-xs-12">
                 <div class="inner-column">
                   <div class="contact-form">
-                    <form name="Quote" action="POST" data-netlify="true">
+                    <form action="POST" netlify>
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                           <input
@@ -286,6 +286,9 @@ export default function QuoteCapacity() {
                         </div>
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <textarea name="Aditional Info">Message</textarea>
+                        </div>
+                        <div>
+                          <div data-netlify-recaptcha></div>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <button type="submit" class="theme-btn btn-style-one">
