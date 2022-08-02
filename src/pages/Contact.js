@@ -45,7 +45,7 @@ const Contact = () => {
               <div class="form-column col-md-8 col-sm-12 col-xs-12">
                 <div class="inner-column">
                   <div class="contact-form">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" action="POST" data-netlify="true">
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                           <input

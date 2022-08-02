@@ -49,7 +49,7 @@ export default function QuoteCapacity() {
               <div class="form-column col-md-8 col-sm-12 col-xs-12">
                 <div class="inner-column">
                   <div class="contact-form">
-                    <form name="Quote" method="POST" data-netlify="true">
+                    <form name="Quote" action="POST" data-netlify="true">
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                           <input
@@ -270,7 +270,7 @@ export default function QuoteCapacity() {
                           </select>
 
                           <select name="property">
-                            <option disabled>SELECT PROPERTY</option>
+                            <option>SELECT PROPERTY</option>
                             <option>FLAT</option>
                             <option>BUNGALOW</option>
                             <option>DUPLEX</option>
@@ -285,7 +285,7 @@ export default function QuoteCapacity() {
                           </select>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
-                          <textarea name="Aditional Info"></textarea>
+                          <textarea name="Aditional Info">Message</textarea>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <button type="submit" class="theme-btn btn-style-one">

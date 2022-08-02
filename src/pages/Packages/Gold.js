@@ -126,16 +126,18 @@ export const Gold = () => {
           <li>- Low energy consuming appliances recommended</li>
           <p>
             <br />
-            <em>Without solar:</em> this is inverter and battery backup without
-            the inclusion of solar panels. PHCN or Generator will be the only
-            source of charging. Its suitable if there is available PHCN or
-            Generator power for average total of 10 hours daily.
+            <strong>WITHOUT SOLAR:</strong> This is an inverter and battery
+            backup system without the inclusion of solar panels. PHCN or
+            Generator will be the only source of charging. Its suitable if there
+            is available PHCN or Generator power for average total of 10 hours
+            daily.
           </p>
           <br />
           <p>
-            <em>With solar:</em> this is inverter and battery backup with the
-            inclusion of solar panels for additional source of charging from the
-            sun without having to solely depend on PHCN for charging.
+            <strong>WITH SOLAR:</strong> This is an inverter and battery backup
+            system with the inclusion of solar panels for additional source of
+            charging from the sun without having to solely depend on PHCN for
+            charging.
           </p>
 
           <p>After sales service and support fully inclusive </p>

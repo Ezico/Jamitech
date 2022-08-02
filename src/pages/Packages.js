@@ -29,10 +29,11 @@ const Packages = () => {
         <div class="divider"></div>
         <p>
           Our packages are designed to provide uninterrupted power supply for
-          homes and offices by appropriately sizing Inverter, battery bank and
-          solar arrays with special consideration for appliance to be powered
-          and hours of usage. Kindly go through our packages below to find a
-          suitable package that fits into your budget or energy requirement.
+          homes and offices through our appropriately sized Inverter, battery
+          bank and solar array with special consideration for appliance to be
+          powered and hours of usage. Kindly go through our packages below to
+          find a suitable package that fits into your budget or energy
+          requirement.
         </p>
       </header>
       <section className="package-container">

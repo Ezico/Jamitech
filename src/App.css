@@ -1176,6 +1176,22 @@ p {
   -webkit-box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
   box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
 }
+.col-5 .overview-content .features-list li span {
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 15px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #000;
+  border-left: 2px solid #ff6600;
+  font-weight: 600;
+  font-size: 18px;
+  -webkit-box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+  box-shadow: -1px 3px 20px 0px rgb(82 90 101 / 10%);
+}
 .overview-content .features-list li span::before {
   content: "";
   position: absolute;
@@ -1216,4 +1232,8 @@ p {
 
 section {
   margin: 40px 0 !important;
+}
+
+.btn {
+  cursor: pointer;
 }

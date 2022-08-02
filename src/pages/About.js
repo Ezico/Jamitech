@@ -45,7 +45,7 @@ const About = () => {
                 <p>
                   <em>Mission Statement:</em> <br />
                   Our Mission is to provide uninterrupted electric power to
-                  every Nigerian through clean renewable.
+                  every Nigerian through clean renewable energy.
                 </p>
                 <p>
                   <em>Vision Statement:</em> <br />
@@ -75,11 +75,11 @@ const About = () => {
                 </p>
                 <p>
                   <em>Quality Assurance:</em>
-                  <br /> Compromising on quality is NEVER an option us. We sell
-                  and deploy only premium quality products and best accessories.
-                  All our installations are executed using the appropriate
-                  installation tools accompanied by our highly professional
-                  installation.
+                  <br /> Compromising on quality is NEVER an option for us. We
+                  sell and deploy only premium quality products and best
+                  accessories. All our installations are executed using the
+                  appropriate installation tools accompanied by our highly
+                  professional installation.
                 </p>
                 <p>
                   <em>Tested and Trusted: </em> <br />
@@ -185,9 +185,10 @@ const About = () => {
                     <h4 class="title">FARMS</h4>
 
                     <p class="description">
-                      Most farms don’t have access to power with our Solar
-                      powered system we provide electricity to farm and solar
-                      powered borehole for agriculture.
+                      Most farms don’t have access to power.
+                      <br /> With our Solar powered system we provide
+                      electricity to farm and solar powered borehole for
+                      agriculture.
                     </p>
                   </div>
                 </div>
