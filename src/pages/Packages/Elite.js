@@ -60,7 +60,7 @@ export const Elite = () => {
               </li>
               <li>
                 Price with solar - N6,800,000 <br />
-                <Link to="/quote?EliteWithSolar">(Request a quote)</Link>
+                <Link to="/quote?Elite">(Request a quote)</Link>
               </li>
             </div>
           </div>

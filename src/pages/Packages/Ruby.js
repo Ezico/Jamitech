@@ -56,7 +56,7 @@ export const Ruby = () => {
               </li>
               <li>
                 Price with solar - N1,000,000 <br />
-                <Link to="/quote?RubyWithSolar">(Request a quote)</Link>
+                <Link to="/quote?Ruby">(Request a quote)</Link>
               </li>
             </div>
           </div>
