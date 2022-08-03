@@ -40,7 +40,7 @@ const Carousel = () => {
                   wrapper="h2"
                   repeat={Infinity}
                 />
-                <Link to="/quote">
+                <Link to="/packages">
                   <button className="btn btn-carousel">SHOP NOW</button>
                 </Link>
               </div>
@@ -68,7 +68,7 @@ const Carousel = () => {
                   wrapper="h2"
                   repeat={Infinity}
                 />
-                <Link to="/quote">
+                <Link to="/packages">
                   <button className="btn btn-carousel">SHOP NOW</button>
                 </Link>
               </div>
