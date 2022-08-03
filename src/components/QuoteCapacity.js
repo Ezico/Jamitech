@@ -49,7 +49,7 @@ export default function QuoteCapacity() {
               <div class="form-column col-md-8 col-sm-12 col-xs-12">
                 <div class="inner-column">
                   <div class="contact-form">
-                    <form action="POST" netlify>
+                    <form name="Quote" netlify netlify-honeypot="bot-field">
                       <input type="hidden" name="form-name" value="Quote" />
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
