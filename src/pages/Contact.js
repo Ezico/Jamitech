@@ -90,7 +90,7 @@ const Contact = () => {
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <textarea
                             name="message"
-                            placeholder="Massage"
+                            placeholder="Message"
                           ></textarea>
                         </div>
                         <div>
