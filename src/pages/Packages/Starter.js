@@ -7,7 +7,7 @@ export const Starter = () => {
   return (
     <>
       <Hero hero="roomsHero">
-        <Banner title="Standard Package">
+        <Banner title="Starter Package">
           <Link to="/packages" className="btn-primary">
             See All Packages
           </Link>
