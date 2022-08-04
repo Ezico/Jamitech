@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Slide1 from "../images/Slider1.jpg";
-import Slide2 from "../images/Slider2.jpg";
+
 import SlideMobile1 from "../images/SliderMobile1.jpg";
-import SlideMobile2 from "../images/SliderMobile2.jpg";
+
 import TypeAnimation from "react-type-animation";
 
 const Carousel = () => {

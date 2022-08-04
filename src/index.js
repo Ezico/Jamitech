@@ -18,6 +18,7 @@ ReactDOM.render(
           href="https://wa.link/lqggo0"
           class="float"
           target="_blank"
+          rel="noopener noreferrer"
           style={{ backgroundColor: "#0b913e" }}
         >
           <FaWhatsapp className="my-float" />
