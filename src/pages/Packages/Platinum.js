@@ -58,7 +58,7 @@ export const Platinum = () => {
               <Link to="/quote?Platinum">(Request a quote)</Link>
             </li>
             <li>
-              Price with solar - N3,650,000 <br />
+              Price with solar - N3,500,000 <br />
               <Link to="/quote?Platinum">(Request a quote)</Link>
             </li>
           </div>

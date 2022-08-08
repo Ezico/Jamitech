@@ -23,7 +23,7 @@ export const Diamond = () => {
               <ul>
                 <li>5kva Pure Sine inverter x 1</li>
                 <li>220AH 12V Tubular Battery x 8</li>
-                <li> 300Watts Monocrystalline Solar panel x 16</li>
+                <li> 300Watts Monocrystalline Solar panel x 18</li>
                 <li>Battery rack x 1</li>
                 <li>Installation accessories</li>
                 <li>Delivery and installation service inclusive</li>
