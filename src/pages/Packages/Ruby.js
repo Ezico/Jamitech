@@ -21,7 +21,7 @@ export const Ruby = () => {
             <div className="p-5 col-xs-12 col-md-3 col-lg-3">
               <h3>Specification</h3>
               <ul>
-                <li>2kva Pure Sine inverter x 1</li>
+                <li>2.5kva Pure Sine inverter x 1</li>
                 <li>220AH 12V Tubular Battery x 2</li>
                 <li>300Watts Monocrystalline Solar panel x 4</li>
                 <li>Battery rack x 1</li>
