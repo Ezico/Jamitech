@@ -41,7 +41,7 @@ const Packages = () => {
           <ul class="features-list">
             <li>
               <Link to="/packages/starter">
-                <span>Starter package (1kva)</span>
+                <span> Starter package (1kva)</span>
               </Link>
             </li>
             <li>
