@@ -46,7 +46,7 @@ const Packages = () => {
             </li>
             <li>
               <Link to="/packages/ruby">
-                <span>Ruby Package (2kva)</span>
+                <span>Ruby Package (2.5kva)</span>
               </Link>
             </li>
             <li>
@@ -76,6 +76,13 @@ const Packages = () => {
             </li>
           </ul>
         </div>
+        <br />
+        <center>
+          <p>
+            Didn't find what you need here? <a href="/contact"> Contact us</a>{" "}
+            for a custom system.
+          </p>
+        </center>
       </section>
     </>
   );

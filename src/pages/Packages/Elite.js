@@ -16,7 +16,7 @@ export const Elite = () => {
       <br />
       <div class="container">
         <div className="packages-details">
-          <div className="packages-header">Elit Package (15KVA)</div>
+          <div className="packages-header">Elite Package (15KVA)</div>
           <div className="packages-content row">
             <div className="p-5 col-xs-12 col-md-3 col-lg-3">
               <h3>Specification</h3>

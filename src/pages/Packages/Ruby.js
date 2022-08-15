@@ -16,7 +16,7 @@ export const Ruby = () => {
       <br />
       <div class="container">
         <div className="packages-details">
-          <div className="packages-header">Ruby Package (2KVA)</div>
+          <div className="packages-header">Ruby Package (2.5KVA)</div>
           <div className="packages-content row">
             <div className="p-5 col-xs-12 col-md-3 col-lg-3">
               <h3>Specification</h3>

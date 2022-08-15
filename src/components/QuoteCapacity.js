@@ -101,7 +101,7 @@ export default function QuoteCapacity() {
                           {isSelected == "?Starter" ? (
                             <select id="package" name="role[]">
                               <option selected>STARTER PACKAGE (1KVA)</option>
-                              <option>RUBY PACKAGE (2KVA)</option>
+                              <option>RUBY PACKAGE (2.5KVA)</option>
                               <option>SILVER PACKAGE (3.5KVA) MID</option>
                               <option>SILVER PACKAGE (3.5KVA) MAX</option>
                               <option>GOLD PACKAGE (5KVA) MID</option>
