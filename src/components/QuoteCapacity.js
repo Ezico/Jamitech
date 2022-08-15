@@ -76,7 +76,7 @@ export default function QuoteCapacity() {
                             required
                           />
                         </div>
-                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                        <div class="form-group col-md-6 I col-sm-6 co-xs-12">
                           <input
                             type="text"
                             name="Phone No"
