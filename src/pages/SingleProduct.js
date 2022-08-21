@@ -44,7 +44,6 @@ export default class SingleRoom extends Component {
       pets,
       images,
     } = room;
-    const [main, ...defaultImages] = images;
 
     const config = {
       public_key: "FLWPUBK_TEST-9f0909dedd120b900870a58568c9da78-X",
@@ -91,7 +90,7 @@ export default class SingleRoom extends Component {
           <div className="container">
             <div className="row">
               <div className="col-7">
-                <img src={images[0]} />
+                <img src={images[0]} alt="img" />
               </div>
               <div className="col-5">
                 <article className="desc">

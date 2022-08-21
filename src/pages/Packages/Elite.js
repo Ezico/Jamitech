@@ -23,7 +23,7 @@ export const Elite = () => {
               <ul>
                 <li>15kva Pure Sine inverter x 1</li>
                 <li>220AH 12V Tubular Battery x 16</li>
-                <li>300Watts Monocrystalline Solar panel x 30</li>
+                <li>300Watts Monocrystalline Solar panel x 32</li>
                 <li>Battery rack x 1</li>
                 <li>Installation accessories</li>
                 <li>Delivery and installation service inclusive</li>
@@ -59,7 +59,7 @@ export const Elite = () => {
                 <Link to="/quote?Elite">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N6,800,000 <br />
+                Price with solar - N7,200,000 <br />
                 <Link to="/quote?Elite">(Request a quote)</Link>
               </li>
             </div>

@@ -47,7 +47,7 @@ const Carousel = () => {
             </div>
           </div>
           <div id="overlay"></div>
-          <img src={Slide1} />
+          <img src={Slide1} alt="alt" />
         </div>
       </Slider>
       <Slider {...settings} className="no-des slider-container">
@@ -75,7 +75,7 @@ const Carousel = () => {
             </div>
           </div>
           <div id="overlay"></div>
-          <img src={SlideMobile1} />
+          <img src={SlideMobile1} alt="alt" />
         </div>
       </Slider>
     </>

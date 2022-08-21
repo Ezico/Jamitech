@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "./Title";
+
 import { Link } from "react-router-dom";
 import panel from "../images/banner2.jpg";
 import wwu from "../images/why.png";
@@ -41,7 +41,7 @@ export default class Services extends Component {
             </div>
             <div className="col-6 fx">
               {/* <Video /> */}
-              <img className="wwu" src={wwu} />
+              <img className="wwu" src={wwu} alt="alt" />
             </div>
             <br />
             <br />
