@@ -5,7 +5,7 @@ import panel from "../images/banner2.jpg";
 import wwu from "../images/why.png";
 import electric from "../images/Man_on_root.jpg";
 import electric2 from "../images/banner3.jpg";
-import { FaCheckCircle, FaThumbsUp } from "react-icons/fa";
+
 export default class Services extends Component {
   render() {
     return (

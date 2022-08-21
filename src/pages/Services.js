@@ -3,11 +3,8 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import {
-  FaLayerGroup,
-  FaShoppingBasket,
   FaCogs,
   FaWrench,
-  FaCog,
   FaCloudDownloadAlt,
   FaBolt,
   FaUndo,

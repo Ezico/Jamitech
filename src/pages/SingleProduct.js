@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import { FlutterWaveButton, closePaymentModal } from "flutterwave-react-v3";
 
-import StyledHero from "../components/StyledHero";
 export default class SingleRoom extends Component {
   constructor(props) {
     super(props);

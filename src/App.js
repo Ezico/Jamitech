@@ -33,6 +33,7 @@ import { Platinum } from "./pages/Packages/Platinum";
 import { Gold } from "./pages/Packages/Gold";
 import { Elite } from "./pages/Packages/Elite";
 import { Diamond } from "./pages/Packages/Diamond";
+import Bronze from "./pages/Packages/Bronze";
 function App() {
   return (
     <>
@@ -64,6 +65,7 @@ function App() {
         <Route exact path="/packages/gold" component={Gold} />
         <Route exact path="/packages/elite" component={Elite} />
         <Route exact path="/packages/diamond" component={Diamond} />
+        <Route exact path="/packages/bronze" component={Bronze} />
         <Route component={Error} />
       </Switch>
       <Footer />

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./styles/contactStyle.css";
 import {
   FaFacebook,
-  FaWhatsapp,
   FaInstagram,
   FaSearchLocation,
   FaEnvelope,

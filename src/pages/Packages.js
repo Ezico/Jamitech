@@ -2,17 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import {
-  FaLayerGroup,
-  FaShoppingBasket,
-  FaCogs,
-  FaWrench,
-  FaCog,
-  FaCloudDownloadAlt,
-  FaBolt,
-  FaUndo,
-  FaTasks,
-} from "react-icons/fa";
+
 const Packages = () => {
   return (
     <>
@@ -42,6 +32,11 @@ const Packages = () => {
             <li>
               <Link to="/packages/starter">
                 <span> Starter package (1kva)</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/packages/bronze">
+                <span> Bronze package (1.5kva)</span>
               </Link>
             </li>
             <li>
