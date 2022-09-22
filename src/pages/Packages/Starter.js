@@ -53,7 +53,7 @@ export const Starter = () => {
                 <Link to="/quote?Starter">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N500,000 <br />
+                Price with solar - N550,000 <br />
                 <Link to="/quote?Starter">(Request a quote)</Link>
               </li>
             </div>
