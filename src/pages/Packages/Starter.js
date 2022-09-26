@@ -23,7 +23,7 @@ export const Starter = () => {
               <ul>
                 <li>1kva Pure Sine Inverter x 1</li>
                 <li>220AH 12V Tubular Battery x 1</li>
-                <li> 300Watts Monocrystalline Solar panel x 2</li>
+                <li> 180Watts Monocrystalline Solar panel x 2</li>
                 <li> Battery rack x 1</li>
                 <li>Installation accessories</li>
                 <li>Delivery and installation service inclusive</li>
@@ -53,7 +53,7 @@ export const Starter = () => {
                 <Link to="/quote?Starter">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N550,000 <br />
+                Price with solar - N500,000 <br />
                 <Link to="/quote?Starter">(Request a quote)</Link>
               </li>
             </div>

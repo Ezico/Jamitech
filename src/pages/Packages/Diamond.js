@@ -59,7 +59,7 @@ export const Diamond = () => {
                 <Link to="/quote?DiamondMid">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N3,800,000 <br />
+                Price with solar - N4,100,000 <br />
                 <Link to="/quote?DiamondMid">(Request a quote)</Link>
               </li>
             </div>
@@ -110,7 +110,7 @@ export const Diamond = () => {
                 <Link to="/quote?DiamondMax">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N5,200,000 <br />
+                Price with solar - N5,700,000 <br />
                 <Link to="/quote?DiamondMax">(Request a quote)</Link>
               </li>
             </div>

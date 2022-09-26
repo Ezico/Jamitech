@@ -55,7 +55,7 @@ export const Silver = () => {
                 <Link to="/quote?SilverMid">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N1,100,000 <br />
+                Price with solar - N1,200,000 <br />
                 <Link to="/quote?SilverMid">(Request a quote)</Link>
               </li>
             </div>
@@ -105,7 +105,7 @@ export const Silver = () => {
                 <Link to="/quote?SilverMax">(Request a quote)</Link>
               </li>
               <li>
-                Price with solar - N1,750,000 <br />
+                Price with solar - N1,900,000 <br />
                 <Link to="/quote?SilverMax">(Request a quote)</Link>
               </li>
             </div>
