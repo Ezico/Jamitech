@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../pages/styles/contactStyle.css";
+import toast, { Toaster } from "react-hot-toast";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -9,32 +12,52 @@ import {
 } from "react-icons/fa";
 
 export default function QuoteCapacity() {
-  const [name, setName] = useState();
-  const [phone, setPhone] = useState();
-  const [location, setLocation] = useState();
-  const [email, setEmail] = useState();
+  // const [location, setLocation] = useState();
 
-  // 👇️ called every time input's value changes
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ctjljgy",
+        "template_51cvmc7",
+        form.current,
+        process.env.REACT_APP_EMAILJS_KEY
+      )
+      .then(
+        (result) => {
+          toast.success("Quote Sent Successfully!");
+        },
+        (error) => {
+          toast.error("Quote Not Sent!");
+        }
+      );
+    e.target.reset();
   };
-  // 👇️ called every time input's value changes
-  const handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
-  // 👇️ called every time input's value changes
-  const handleLocationChange = (event) => {
-    setLocation(event.target.value);
-  };
-  // 👇️ called every time input's value changes
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
+  // // 👇️ called every time input's value changes
+  // const handleNameChange = (event) => {
+  //   setName(event.target.value);
+  // };
+  // // 👇️ called every time input's value changes
+  // const handlePhoneChange = (event) => {
+  //   setPhone(event.target.value);
+  // };
+  // // 👇️ called every time input's value changes
+  // const handleLocationChange = (event) => {
+  //   setLocation(event.target.value);
+  // };
+  // // 👇️ called every time input's value changes
+  // const handleEmailChange = (event) => {
+  //   setEmail(event.target.value);
+  // };
 
   var isSelected = window.location.search;
 
   return (
     <div>
+      <Toaster position="top-center" reverseOrder={false} />
       <section class="contact-page-section">
         <div class="container">
           <div class="sec-title">
@@ -47,20 +70,13 @@ export default function QuoteCapacity() {
               <div class="form-column col-md-8 col-sm-12 col-xs-12">
                 <div class="inner-column">
                   <div class="contact-form">
-                    <form
-                      method="post"
-                      name="Quote"
-                      netlify
-                      netlify-honeypot="bot-field"
-                    >
+                    <form ref={form} onSubmit={sendEmail}>
                       <input type="hidden" name="form-name" value="Quote" />
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                           <input
                             type="text"
                             name="name"
-                            onChange={handleNameChange}
-                            value={name}
                             placeholder="Full Name"
                             required
                           />
@@ -69,8 +85,6 @@ export default function QuoteCapacity() {
                           <input
                             type="text"
                             name="Location"
-                            onChange={handleLocationChange}
-                            value={location}
                             placeholder="Location"
                             required
                           />
@@ -78,9 +92,7 @@ export default function QuoteCapacity() {
                         <div class="form-group col-md-6 I col-sm-6 co-xs-12">
                           <input
                             type="text"
-                            name="Phone No"
-                            onChange={handlePhoneChange}
-                            value={phone}
+                            name="Phone"
                             placeholder="Phone"
                             required
                           />
@@ -89,8 +101,6 @@ export default function QuoteCapacity() {
                           <input
                             type="email"
                             name="email"
-                            onChange={handleEmailChange}
-                            value={email}
                             placeholder="Email"
                             required
                           />
@@ -304,7 +314,7 @@ export default function QuoteCapacity() {
                             <option>BUNGALOW</option>
                             <option>DUPLEX</option>
                           </select>
-                          <select name="Number of rooms">
+                          <select name="rooms">
                             <option>NUMBER OF ROOMS</option>
                             <option>1</option>
                             <option>2</option>
@@ -315,13 +325,11 @@ export default function QuoteCapacity() {
                         </div>
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <textarea
-                            name="Aditional Info"
+                            name="Message"
                             placeholder="Message"
                           ></textarea>
                         </div>
-                        <div>
-                          <div data-netlify-recaptcha></div>
-                        </div>
+                        <div></div>
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <button type="submit" class="theme-btn btn-style-one">
                             Send Now

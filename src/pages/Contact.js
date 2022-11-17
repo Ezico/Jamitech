@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
+
 import "./styles/contactStyle.css";
 import {
   FaFacebook,
@@ -9,30 +12,31 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [location, setLocation] = useState();
-  const [phone, setPhone] = useState();
+  const form = useRef();
 
-  // 👇️ called every time input's value changes
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-  // 👇️ called every time input's value changes
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  // 👇️ called every time input's value changes
-  const handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
-  // 👇️ called every time input's value changes
-  const handleLocationChange = (event) => {
-    setLocation(event.target.value);
+    emailjs
+      .sendForm(
+        "service_ctjljgy",
+        "template_cbjd8vk",
+        form.current,
+        process.env.REACT_APP_EMAILJS_KEY
+      )
+      .then(
+        (result) => {
+          toast.success("Message Sent Successfully!");
+        },
+        (error) => {
+          toast.error("Message Not Sent!");
+        }
+      );
+    e.target.reset();
   };
   return (
     <>
+      <Toaster position="top-center" reverseOrder={false} />
       <section class="contact-page-section">
         <div class="container">
           <div class="sec-title">
@@ -44,20 +48,13 @@ const Contact = () => {
               <div class="form-column col-md-8 col-sm-12 col-xs-12">
                 <div class="inner-column">
                   <div class="contact-form">
-                    <form
-                      name="Contact"
-                      method="post"
-                      netlify
-                      netlify-honeypot="bot-field"
-                    >
+                    <form ref={form} onSubmit={sendEmail}>
                       <input type="hidden" name="form-name" value="Contact" />
                       <div class="row clearfix">
                         <div class="form-group col-md-6 col-sm-6 co-xs-12">
                           <input
                             type="text"
                             name="name"
-                            onChange={handleNameChange}
-                            value={name}
                             placeholder="Name"
                             required
                           />
@@ -66,8 +63,6 @@ const Contact = () => {
                           <input
                             type="text"
                             name="location"
-                            onChange={handleLocationChange}
-                            value={location}
                             placeholder="Address"
                             required
                           />
@@ -76,8 +71,6 @@ const Contact = () => {
                           <input
                             type="text"
                             name="phone"
-                            onChange={handlePhoneChange}
-                            value={phone}
                             placeholder="Phone Number"
                             required
                           />
@@ -86,8 +79,6 @@ const Contact = () => {
                           <input
                             type="email"
                             name="email"
-                            onChange={handleEmailChange}
-                            value={email}
                             placeholder="Email"
                             required
                           />
@@ -98,9 +89,7 @@ const Contact = () => {
                             placeholder="Message"
                           ></textarea>
                         </div>
-                        <div>
-                          <div data-netlify-recaptcha></div>
-                        </div>
+
                         <div class="form-group col-md-12 col-sm-12 co-xs-12">
                           <button type="submit" class="theme-btn btn-style-one">
                             Send Now
